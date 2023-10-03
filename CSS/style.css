@@ -125,20 +125,20 @@ footer li { padding: 10px; color: white;}
 
 h1 {text-align: center; margin: 0 auto; padding-top: 25px;}
 
-/*.viewProjectsButton {
-  background-color: purple;
-  height: 60px;
+.viewProjectsButton {
   width: 200px;
+  height: 60px;
+  background-color: purple;
   color: white;
-  font-size: 16px;
   border: none;
-  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
-.viewProjectsButton:hover {
-  cursor: pointer;
-}
-*/
 @media (max-width: 600px) {
   .flexContainer {
     flex-direction: column;
