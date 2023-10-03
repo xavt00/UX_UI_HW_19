@@ -1,0 +1,149 @@
+/* CSS Reset- This will help me make sure that nothing is going wonky at the start haha*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* I'll add my custom styles after here */
+.inline-block {display: inline-block; vertical-align: top;}
+
+.logo { width: 75%; padding: 1%; }
+
+
+nav { width: 100%; background-color: #0D0C0D; padding: 1%; }
+
+nav li { padding: 10px; color: white;}
+
+ul { /*width: 50%;*/ margin-left: auto; }
+
+.logo { text-align: start; }
+
+.heroImg { height: 600px; padding: 25px; }
+
+.content { width: 500px; margin: 0 auto; }
+
+/* My UX Skills section coded using CSS flex */
+.flexContainer {
+display: flex;
+justify-content: center;
+}
+
+.flexContainer > div {
+width: 33%;
+margin: 10px;
+padding: 20px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+text-align: center;
+}
+
+/* Add additional styles for the image, h3, and p tags within the flexContainer divs */
+.flexContainer img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+justify-content: center;
+}
+
+.flexContainer h3 {
+font-size: 20px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.flexContainer p {
+margin-bottom: 20px;
+text-align: center;
+}
+
+.myWork {
+  text-align: center;
+}
+
+.workGrid {
+  display: grid;
+  justify-content: center;
+}
+
+.workGrid > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+.viewAllProjects {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.viewAllProjects h1 {
+  font-size: 24px;
+  text-align: center;
+  justify-content:center ;
+}
+
+/*.workGrid { 
+  display: grid;
+  justify-content: center;
+}
+.workGrid > div {
+  margin: 10px;
+  padding: 20px;
+}
+*/
+/*
+.myWork workGrid {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.myWork h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+*/
+/* Add styles for the View all projects h3 tag */
+/* Commenting this out to see if this fixes my problem.myWork h3 {
+text-align: center;
+margin-top: 20px;
+font-size: 24px;
+}
+*/
+footer { background-color: #0D0C0D; padding: 10px; }
+
+footer ul { display: inline-block; vertical-align: top; }
+
+footer li { padding: 10px; color: white;}
+
+h1 {text-align: center; margin: 0 auto; padding-top: 25px;}
+
+@media (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  
+  .flexContainer > div {
+    width: 100%;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-areas:
+      "project1"
+      "project2";
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 100%;
+  }
+  
+  .workGrid > div {
+    margin: 10px;
+    padding: 20px;
+  }
+}
