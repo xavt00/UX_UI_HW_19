@@ -125,6 +125,20 @@ footer li { padding: 10px; color: white;}
 
 h1 {text-align: center; margin: 0 auto; padding-top: 25px;}
 
+.viewProjectsButton {
+  background-color: purple;
+  height: 60px;
+  width: 200px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.viewProjectsButton:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .flexContainer {
     flex-direction: column;
