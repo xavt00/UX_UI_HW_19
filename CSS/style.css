@@ -124,7 +124,21 @@ footer ul { display: inline-block; vertical-align: top; }
 footer li { padding: 10px; color: black;}
 
 h1 {text-align: center; margin: 0 auto; padding-top: 25px;}
+nav {
+  background-color: #f5f5f5;
+}
 
+nav li {
+  color: black;
+}
+
+footer {
+  background-color: #f5f5f5;
+}
+
+footer li {
+  color: black;
+}
 .viewProjectsButton {
   width: 200px;
   height: 60px;
